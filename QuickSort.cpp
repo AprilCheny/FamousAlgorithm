@@ -19,7 +19,7 @@ int Partition(vector<int> &data, int low, int high)
 
 		while (low < high && data[low] < base)
 			low++;
-		if (low < high) //找到小于基准的元素
+		if (low < high) //找到大于基准的元素
 		{
 			data[high] = data[low];
 			high--;
